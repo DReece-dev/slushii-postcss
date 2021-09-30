@@ -1,0 +1,35 @@
+{
+  "name": "slushii-postcss",
+  "version": "0.1.0",
+  "description": "The POSTCSS Version of The Slushii CSS Framework",
+  "main": "index.js",
+  "scripts": {
+    "compile": "gulp css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DReece-dev/Slushii-POSTCSS.git"
+  },
+  "keywords": [
+    "css",
+    "postcss",
+    "flexbox",
+    "grid",
+    "slushii",
+    "cssframework",
+    "framework"
+  ],
+  "author": "Dylan Reece",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DReece-dev/Slushii-POSTCSS/issues"
+  },
+  "homepage": "https://github.com/DReece-dev/Slushii-POSTCSS#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "cssnext": "^1.8.5",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "rucksack-css": "^1.0.2"
+  }
+}
