@@ -2,7 +2,7 @@
 
 The POSTCSS Version of The Slushii CSS Framework
 
-Version: v0.1.1
+Version: v0.1.2
 
 Created: 2021
 
