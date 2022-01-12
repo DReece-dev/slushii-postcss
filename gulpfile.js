@@ -1,15 +1,14 @@
-const gulp = require('gulp');
-const postcss = require('gulp-postcss');
-// Plugins
-const autoprefixer = require('autoprefixer');
-const cssnested = require('postcss-nested');
-const cssnano = require('cssnano');
+let postcss = require('gulp-postcss');
+let gulp = require('gulp');
+let autoprefixer = require('autoprefixer');
+let cssnano = require('cssnano');
+let cssnested = require('postcss-nested');
 
 gulp.task('css', function () {
     let plugins = [
         autoprefixer,
-        cssnested,
-        cssnano
+        cssnano(),
+        cssnested
     ];
     return gulp.src('./src/*.css')
         .pipe(postcss(plugins))
