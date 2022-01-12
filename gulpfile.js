@@ -2,16 +2,16 @@ const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 // Plugins
 const autoprefixer = require('autoprefixer');
-const rucksack = require('rucksack-css');
-const cssnext = require('cssnext');
+const cssnested = require('postcss-nested');
+const cssnano = require('cssnano');
 
 gulp.task('css', function () {
-    var processors = [
+    let plugins = [
         autoprefixer,
-        rucksack,
-        cssnext
+        cssnested,
+        cssnano
     ];
     return gulp.src('./src/*.css')
-        .pipe(postcss(processors))
+        .pipe(postcss(plugins))
         .pipe(gulp.dest('./dest'));
 });

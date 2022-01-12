@@ -27,9 +27,9 @@
   "homepage": "https://github.com/DReece-dev/Slushii-POSTCSS#readme",
   "devDependencies": {
     "autoprefixer": "^10.3.6",
-    "cssnext": "^1.8.5",
+    "cssnano": "^5.0.15",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
-    "rucksack-css": "^1.0.2"
+    "postcss-nested": "^5.0.6"
   }
 }
