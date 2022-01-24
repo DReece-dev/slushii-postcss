@@ -3,6 +3,7 @@ const gulp = require('gulp');
 const autoprefixer = require('autoprefixer');
 const purgecss = require('gulp-purgecss');
 const cssnano = require('cssnano');
+// const postcssPresetEnv = require('postcss-preset-env');
 
 gulp.task('css', () => {
     let plugins = [
@@ -15,7 +16,7 @@ gulp.task('css', () => {
 
 gulp.task('purgecss', () => {
 
-    return gulp.src('./src/*.css')
+    return gulp.src('./dest/*.css')
         .pipe(purgecss({
             content: ['./*.html']
         }))
