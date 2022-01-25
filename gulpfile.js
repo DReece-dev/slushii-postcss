@@ -15,10 +15,9 @@ gulp.task('css', () => {
 });
 
 gulp.task('purgecss', () => {
-
-    return gulp.src('./dest/*.css')
+    return gulp.src('src/**/*.css')
         .pipe(purgecss({
-            content: ['./*.html']
+            content: ['src/**/*.html']
         }))
         .pipe(gulp.dest('./dest'))
 })
