@@ -22,7 +22,7 @@ gulp.task('purgecss', () => {
         .pipe(gulp.dest('./dest'))
 })
 
-gulp.task('mini', () => {
+gulp.task('nano', () => {
     let nano = [
         cssnano
     ];
