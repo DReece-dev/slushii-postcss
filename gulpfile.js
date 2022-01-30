@@ -1,7 +1,7 @@
-const postcss = require('gulp-postcss');
 const gulp = require('gulp');
-const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
 const purgecss = require('gulp-purgecss');
+const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 // const postcssPresetEnv = require('postcss-preset-env');
 
