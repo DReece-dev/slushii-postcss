@@ -17,7 +17,9 @@ gulp.task('css', () => {
 gulp.task('purgecss', () => {
     return gulp.src('./src/*.css')
         .pipe(purgecss({
-            content: ['src/**/*.html']
+            safelist: [],
+            content: ['src/**/*.html'],
+            defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
         }))
         .pipe(gulp.dest('./dest'))
 })
