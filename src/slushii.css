@@ -174,15 +174,18 @@ Licensed under MIT (github.com/DReece-dev/slushii)
   line-height: 1.5;
   overflow-wrap: break-word;
   -moz-tab-size: 4;
-  tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
   font-family: var(--deafult-fonts);
+  -webkit-font-smoothing: antialiased;
 }
 
 hr {
@@ -222,7 +225,7 @@ h1,
 
 @media (min-width: 1200px) {
   h1,
-  .h1 {
+.h1 {
     font-size: 2.5rem;
   }
 }
@@ -233,7 +236,7 @@ h2,
 
 @media (min-width: 1200px) {
   h2,
-  .h2 {
+.h2 {
     font-size: 2rem;
   }
 }
@@ -244,7 +247,7 @@ h3,
 
 @media (min-width: 1200px) {
   h3,
-  .h3 {
+.h3 {
     font-size: 1.75rem;
   }
 }
@@ -255,7 +258,7 @@ h4,
 
 @media (min-width: 1200px) {
   h4,
-  .h4 {
+.h4 {
     font-size: 1.5rem;
   }
 }
@@ -282,7 +285,11 @@ p {
 }
 :where(abbr[title]) {
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  cursor: help;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
 address {
@@ -300,6 +307,11 @@ a:hover {
   color: var(--blue-600);
 }
 
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
 :where(b, strong) {
   font-weight: bolder;
 }
@@ -309,8 +321,8 @@ a:hover {
   font-size: 1em;
 }
 
-:where(small) {
-  font-size: 80%;
+small {
+  font-size: 0.875em;
 }
 
 sub,
@@ -353,7 +365,7 @@ select {
   text-transform: none;
 }
 
-:where(button, [type="button" i], [type="reset" i], [type="submit" i]) {
+:where(button, [type="button"], [type="reset"], [type="submit"]) {
   -webkit-appearance: button;
 }
 
@@ -374,7 +386,7 @@ select {
   height: auto;
 }
 
-:where([type="search" i]) {
+:where([type="search"]) {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -393,6 +405,7 @@ select {
   border: solid;
   color: black;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
   left: 0;
   margin: auto;
@@ -400,6 +413,7 @@ select {
   position: absolute;
   right: 0;
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
 }
 
@@ -409,6 +423,7 @@ select {
 
 summary {
   display: list-item;
+  cursor: pointer;
 }
 
 blockquote,
@@ -450,7 +465,7 @@ menu {
 }
 
 button,
-[role="button"] {
+[role=button] {
   cursor: pointer;
 }
 
@@ -477,7 +492,8 @@ video {
 
 meter {
   -webkit-appearance: revert;
-  appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
 }
 
 :where([hidden]) {
@@ -559,6 +575,7 @@ meter {
     font-size: 2.5rem;
   }
 }
+
 .container {
   flex-grow: 1;
   margin: 0 auto;
