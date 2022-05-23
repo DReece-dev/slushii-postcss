@@ -4,7 +4,9 @@
   "description": "The POSTCSS Version of The Slushii CSS Framework",
   "main": "index.js",
   "scripts": {
-    "compile": "gulp css"
+    "compile": "gulp css",
+    "purge": "gulp purgecss",
+    "nano": "gulp nano"
   },
   "repository": {
     "type": "git",
