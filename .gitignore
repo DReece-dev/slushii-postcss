@@ -1,2 +1,7 @@
+# OS & Editor
 .DS_Store
 node_modules
+/.vscode/
+
+# Testing files
+src/index.html
