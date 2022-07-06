@@ -3,7 +3,6 @@ const postcss = require('gulp-postcss');
 const purgecss = require('gulp-purgecss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
-// const postcssPresetEnv = require('postcss-preset-env');
 
 gulp.task('css', () => {
     let plugins = [
