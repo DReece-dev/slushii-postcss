@@ -1,7 +1,28 @@
-# OS & Editor
-.DS_Store
-node_modules
+# OS or Editor folders
+src/scss/helpers
 /.vscode/
 
 # Testing files
-src/index.html
+index.html
+
+# Dependency caches
+/node_modules
+/packages
+
+# build output directories
+/bin
+/out
+
+# files generated at runtime
+.log
+.lock
+
+# Hidden files
+.DS_Store
+Thumbs.db
+
+# Ignore SASS config files
+.sass-cache
+
+# Ignore all text files
+*.txt
