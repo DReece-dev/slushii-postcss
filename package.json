@@ -8,7 +8,8 @@
     "purge": "gulp purgecss",
     "nano": "gulp nano",
     "watch:css": "postcss src/slushii.css -o dest/slushii.css -w",
-    "build:css": "postcss src/slushii.css -o dest/slushii.css"
+    "build:css": "postcss src/slushii.css -o dest/slushii.css",
+    "browser-list-update": "npx browserslist@latest --update-db"
   },
   "repository": {
     "type": "git",
