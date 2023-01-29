@@ -4,9 +4,6 @@
   "description": "The POSTCSS Version of The Slushii CSS Framework",
   "main": "index.js",
   "scripts": {
-    "compile": "gulp css",
-    "purge": "gulp purgecss",
-    "nano": "gulp nano",
     "watch:css": "postcss src/slushii.css -o dest/slushii.css -w",
     "build:css": "postcss src/slushii.css -o dest/slushii.css",
     "browser-list-update": "npx browserslist@latest --update-db"
@@ -34,9 +31,6 @@
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
-    "gulp": "^4.0.2",
-    "gulp-postcss": "^9.0.1",
-    "gulp-purgecss": "^5.0.0",
     "postcss": "^8.4.19",
     "postcss-cli": "^10.0.0"
   }
