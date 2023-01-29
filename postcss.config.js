@@ -1,15 +1,16 @@
-const purgecss = require('@fullhuman/postcss-purgecss')
+const purgecss = require('@fullhuman/postcss-purgecss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
 
 module.exports = {
   plugins: [
-    require('autoprefixer'),
-    // purgecss({
-    //   safelist: [],
-    //   content: ['src/**/*.html'],
-    //   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
-    // }),
-    // require('cssnano')({
-    //   preset: 'default',
-    // }),
+    autoprefixer,
+    purgecss({
+      content: ['src/**/*.html'],
+      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+    }),
+    cssnano({
+      preset: 'default'
+    })
   ]
-}
+};
