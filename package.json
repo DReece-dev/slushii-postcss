@@ -29,9 +29,9 @@
   "homepage": "https://github.com/DReece-dev/Slushii-POSTCSS#readme",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "autoprefixer": "^10.4.13",
-    "cssnano": "^5.1.14",
-    "postcss": "^8.4.19",
-    "postcss-cli": "^10.0.0"
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.26",
+    "postcss-cli": "^10.1.0"
   }
 }
