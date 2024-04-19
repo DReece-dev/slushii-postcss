@@ -2,9 +2,9 @@
 
 The POSTCSS Version of The Slushii CSS Framework
 
-Version: v0.1.6
+Version: v1.0.0
 
-Created: 2021 - 2023
+Created: 2021 - 2024
 
 Copyright, Dylan R Hewitt
 
