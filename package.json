@@ -1,6 +1,6 @@
 {
   "name": "slushii-postcss",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "description": "The POSTCSS Version of The Slushii CSS Framework",
   "main": "index.js",
   "scripts": {
@@ -28,10 +28,10 @@
   },
   "homepage": "https://github.com/DReece-dev/Slushii-POSTCSS#readme",
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^5.0.0",
-    "autoprefixer": "^10.4.14",
-    "cssnano": "^6.0.1",
-    "postcss": "^8.4.26",
-    "postcss-cli": "^10.1.0"
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^6.1.2",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0"
   }
 }
