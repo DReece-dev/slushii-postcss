@@ -1,37 +1,37 @@
 {
-  "name": "slushii-postcss",
-  "version": "1.0.0",
-  "description": "The POSTCSS Version of The Slushii CSS Framework",
-  "main": "index.js",
-  "scripts": {
-    "watch:css": "postcss src/slushii.css -o dest/slushii.css -w",
-    "build:css": "postcss src/slushii.css -o dest/slushii.css",
-    "browser-list-update": "npx update-browserslist-db@latest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DReece-dev/Slushii-POSTCSS.git"
-  },
-  "keywords": [
-    "css",
-    "postcss",
-    "flexbox",
-    "grid",
-    "slushii",
-    "cssframework",
-    "framework"
-  ],
-  "author": "Dylan Reece",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DReece-dev/Slushii-POSTCSS/issues"
-  },
-  "homepage": "https://github.com/DReece-dev/Slushii-POSTCSS#readme",
-  "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^6.0.0",
-    "autoprefixer": "^10.4.19",
-    "cssnano": "^6.1.2",
-    "postcss": "^8.4.38",
-    "postcss-cli": "^11.0.0"
-  }
+    "name": "slushii-postcss",
+    "version": "1.0.1",
+    "description": "The POSTCSS Version of The Slushii CSS Framework",
+    "main": "index.js",
+    "scripts": {
+        "watch:css": "postcss src/slushii.css -o dest/slushii.css -w",
+        "build:css": "postcss src/slushii.css -o dest/slushii.css",
+        "browser-list-update": "npx update-browserslist-db@latest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DReece-dev/Slushii-POSTCSS.git"
+    },
+    "keywords": [
+        "css",
+        "postcss",
+        "flexbox",
+        "grid",
+        "slushii",
+        "cssframework",
+        "framework"
+    ],
+    "author": "Dylan Reece",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/DReece-dev/Slushii-POSTCSS/issues"
+    },
+    "homepage": "https://github.com/DReece-dev/Slushii-POSTCSS#readme",
+    "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^7.0.2",
+        "autoprefixer": "^10.4.21",
+        "cssnano": "^7.1.1",
+        "postcss": "^8.5.6",
+        "postcss-cli": "^11.0.1"
+    }
 }
