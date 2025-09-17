@@ -4,8 +4,8 @@
     "description": "The POSTCSS Version of The Slushii CSS Framework",
     "main": "index.js",
     "scripts": {
-        "watch:css": "postcss src/slushii.css -o dest/slushii.css -w",
-        "build:css": "postcss src/slushii.css -o dest/slushii.css",
+        "watch:css": "postcss css/slushii.css -o dest/slushii.css -w --env development",
+        "build:css": "postcss css/slushii.css -o dest/slushii.css --env production",
         "browser-list-update": "npx update-browserslist-db@latest"
     },
     "repository": {
