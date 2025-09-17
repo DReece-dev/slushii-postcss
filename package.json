@@ -6,6 +6,8 @@
     "scripts": {
         "watch:css": "postcss css/slushii.css -o dest/slushii.css -w --env development",
         "build:css": "postcss css/slushii.css -o dest/slushii.css --env production",
+        "serve": "vite --port 3000 --open",
+        "dev": "npm run serve & npm run watch:css",
         "browser-list-update": "npx update-browserslist-db@latest"
     },
     "repository": {
@@ -32,6 +34,7 @@
         "autoprefixer": "^10.4.21",
         "cssnano": "^7.1.1",
         "postcss": "^8.5.6",
-        "postcss-cli": "^11.0.1"
+        "postcss-cli": "^11.0.1",
+        "vite": "^7.1.5"
     }
 }
